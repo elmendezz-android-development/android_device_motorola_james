@@ -7,7 +7,7 @@
 # Inherit from msm8937-common
 -include device/motorola/msm8937-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/james
+DEVICE_PATH := device/motorola/pettyl
 
 # Display
 TARGET_SCREEN_HEIGHT := 1280
@@ -18,7 +18,7 @@ TARGET_SCREEN_DENSITY := 320
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := james_defconfig
+TARGET_KERNEL_CONFIG := pettyl_defconfig
 
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16879616
@@ -31,4 +31,4 @@ VENDOR_SECURITY_PATCH := 2020-06-04
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
--include vendor/motorola/james/BoardConfigVendor.mk
+-include vendor/motorola/pettyl/BoardConfigVendor.mk
